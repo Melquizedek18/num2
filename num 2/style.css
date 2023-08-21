@@ -1,0 +1,170 @@
+@media screen and (max-width: 768px) {
+
+    header{
+        padding: 20px;
+    }
+    header .logo{
+        font-size: 24px;
+    }
+    header ul li a{
+        margin-left: 20px;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .content .imgBox{
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+     
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h2, p a{
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    font-family: 'Space Grotesk', sans-serif;
+}
+header ul li a{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0, 104, 31);
+    transition: 0.5s;
+}
+
+header{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    font-size:  30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+  
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox{
+    position: relative;
+    text-align: justify;
+    padding: 20px;
+    overflow: hidden;
+    line-height: 1.5;
+    
+    
+}
+
+.content .textBox h2{
+    color: #fff;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.content .textBox h2 span{
+    font-size: 2em;
+}
+
+.content .textBox p{
+    color: #fff;
+    font-size:   13px;
+    font-family: sans-serif;
+     
+}
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #fff;
+    color: #111;
+    border-radius: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+.content .imgBox{
+    width: 500px;
+    display: flex;
+    padding-right: 10px;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+.content .imgBox img{
+    max-width: 750px;
+}
+ 
+
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li img{
+    max-width:   160px;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+
+}

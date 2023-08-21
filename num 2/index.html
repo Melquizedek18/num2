@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Cars</title>
+         
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&family=Poppins:wght@500;600&family=Space+Grotesk:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+     </head>
+    <body>
+        <section class="Home">
+            <header>
+                <a href="#" class="logo">Cars</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Arrival</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>That's What<br><span>I like</span></h2>
+                    <p>
+                         The Lamborghini Aventador LP 700-4 is a mid-engined sports car produced by the <br> 
+                         Italian manufacturer
+                          Automobili Lamborghini,is the replacement for the Murciélago. <br> 
+                         The Aventador was publicly announced
+                         at the Geneva Motor Show on February<br>
+                          28, 2011.  
+                         Its production will be limited to 4000 units (4099 Murciélagos were produced).<br>
+
+                         Lamborghini claims he Aventador is two generations ahead of any car on sale<br>
+                          using suspension inspired by Formula 1 cars and a carbon fiber starts.
+                    </p>
+                    <a href="#">View All Products</a>
+                </div>
+                <div class="imgBox">
+                    <img src="./lambo_green_2-removebg-preview.png" alt="" class="Cars">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="./lamb1 lemon.png" onclick="imgSlider('./lamb1 lemon.png'); changeColor('rgb(159, 238, 13)');"></li>
+                <li><img src="./lambo_green_2-removebg-preview.png" onclick="imgSlider('./lambo_green_2-removebg-preview.png');  changeColor('rgb(16, 141, 22)');"></li>
+                <li><img src="./lambo red.png3.png" onclick="imgSlider('./lambo red.png3.png');  changeColor(' rgb(192, 5, 5)');"></li>
+            </ul>
+        </section>
+    </body>
+</html>
+<script>
+    function imgSlider(someThing){
+        document.querySelector('.Cars').src = someThing;
+    }
+    function changeColor(color){
+        const sec = document.querySelector('.Home');
+        sec.style.background = color;
+    }
+</script>
